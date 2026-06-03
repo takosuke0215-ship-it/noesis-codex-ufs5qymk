@@ -166,3 +166,46 @@
     line-height: 1.5;
   }
 }
+
+
+.gallery-grid-images {
+  align-items: stretch;
+}
+
+.gallery-card {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(17, 23, 28, 0.86);
+}
+
+.gallery-card img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: #080b0e;
+}
+
+.gallery-card figcaption {
+  display: grid;
+  gap: 2px;
+  padding: 10px 12px 12px;
+}
+
+.gallery-card figcaption b {
+  color: var(--gold);
+  font-size: 13px;
+}
+
+.gallery-card figcaption span {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .gallery-card img {
+    aspect-ratio: 3 / 4;
+  }
+}
