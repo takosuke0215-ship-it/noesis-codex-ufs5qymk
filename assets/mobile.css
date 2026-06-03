@@ -1,0 +1,168 @@
+@media (max-width: 860px) {
+  .topbar {
+    position: sticky;
+  }
+
+  .topbar-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 14px;
+  }
+
+  .brand strong {
+    font-size: 19px;
+  }
+
+  .brand span {
+    font-size: 11px;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 2px 0 6px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .nav a {
+    flex: 0 0 auto;
+    padding: 7px 11px;
+    background: rgba(17, 23, 28, 0.72);
+    border-color: rgba(45, 57, 66, 0.8);
+  }
+
+  .hero-inner {
+    padding: 52px 16px 38px;
+  }
+
+  h1 {
+    font-size: clamp(38px, 14vw, 64px);
+    letter-spacing: 0.05em;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .portal-grid {
+    margin: 0 auto;
+    padding: 16px;
+    grid-template-columns: 1fr;
+  }
+
+  .portal {
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .portal span {
+    font-size: 17px;
+  }
+
+  main {
+    padding: 22px 14px 56px;
+  }
+
+  section {
+    padding: 26px 0;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .codex-grid,
+  .meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .codex-card,
+  .meta {
+    padding: 15px;
+  }
+
+  .page-head {
+    padding: 34px 16px 8px;
+  }
+
+  .page-head h1 {
+    font-size: clamp(32px, 11vw, 46px);
+  }
+
+  .time-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .footer {
+    padding: 18px 14px 38px;
+  }
+}
+
+@media (max-width: 640px) {
+  .table-wrap {
+    border: 0;
+    overflow: visible;
+  }
+
+  table {
+    display: block;
+    min-width: 0;
+    background: transparent;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+
+  tr {
+    margin: 0 0 12px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+    overflow: hidden;
+  }
+
+  td,
+  th {
+    border-bottom: 1px solid var(--line);
+    padding: 10px 12px;
+  }
+
+  tr td:last-child,
+  tr th:last-child {
+    border-bottom: 0;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .gallery-slot {
+    aspect-ratio: 1 / 1;
+  }
+
+  .chip {
+    font-size: 13px;
+    margin-bottom: 7px;
+  }
+
+  .breadcrumbs {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
